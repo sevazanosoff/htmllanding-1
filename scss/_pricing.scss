@@ -1,0 +1,146 @@
+.section__pricing{
+    padding-top: 40px;
+}
+.pricing {
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: 40px;
+        gap: 80px;
+        @media(max-width: $breakpoint1200){
+            gap: 70px;
+            flex-direction: column;
+            margin: 0px 40px;
+        }
+        @media(max-width: $breakpoint768){
+            gap: 10px;
+        }
+    }
+
+    &__item-primary {
+        padding-top: 120px;
+        margin-left: 40px;
+        @media(max-width: $breakpoint1900){
+        }
+        @media(max-width: $breakpoint1200){
+            
+        }
+        @media(max-width: $breakpoint768){
+            padding-top: 40px;
+            margin: 0px 15px;
+        }
+    }
+
+    &__item-title {
+        @media(max-width: $breakpoint768){
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 40px 0;
+        max-width: 480px;
+        @media(max-width: $breakpoint1200){
+            gap: 14px;
+            padding: 20px 0;
+            max-width: 767px;
+        }
+        @media(max-width: $breakpoint768){
+            justify-content: center;
+            padding: 15px 0;
+        }
+    }
+
+    &__list-item {
+        border-radius: 24px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 180%;
+        align-items: center;
+        padding: 8px 20px;
+        @media(max-width: $breakpoint1200){
+            padding: 6px 18px;
+        }
+        @media(max-width: $breakpoint768){
+            font-size: 16px;
+        }
+        
+        &:nth-child(1){
+            background: #FFF1EF;
+            border: 1px solid #FFD1CA;
+            color: #FF8B7A;
+        }
+        &:nth-child(2){
+            background: #FFF8EE;
+            border: 1px solid #FFCA7A;
+            color: #FFAC2F;
+        }
+        &:nth-child(3){
+            background: #ECFFF4;
+            border: 1px solid #98FAC0;
+            color: #3ACD77;
+        }
+        &:nth-child(4){
+            background: #F1FEFF;
+            border: 1px solid #6EE1E9;
+            color: #2BC0CA;
+        }
+        &:nth-child(5){
+            background: #FCF5FF;
+            border: 1px solid #EBBDFF;
+            color: #C140FD;
+        }
+    }
+    
+    &__btn{
+        @media(max-width: $breakpoint768){
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__item-secondary {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        flex: 0 1 50%;
+        background: url('../img/pricing-bg.svg') center / cover no-repeat; 
+        margin-right: 40px;
+        width: 100%;
+        padding: 391px 0px;
+        @media(max-width: $breakpoint1200){
+            padding: 150px 0;
+            width: 100%;
+        }
+    }
+    &__item-price{
+
+    }
+    &__item-cost {
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 80%;
+        letter-spacing: -0.03em;
+        color: $primary;
+        @media(max-width: $breakpoint768){
+            font-size: 80px;
+        }
+    }
+
+    &__item-info {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 180%;
+        color: $primary;
+        @media(max-width: $breakpoint768){
+            font-size: 18px;
+        }
+    }
+
+}

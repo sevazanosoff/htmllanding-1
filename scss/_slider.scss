@@ -1,0 +1,130 @@
+
+.section {
+    &__slider {
+        background: #FFFAFE;
+        margin: 40px 40px 0px 40px;
+        padding: 160px 0 520px 0px;
+        @media(max-width: $breakpoint992){
+            padding-top: 80px;
+        }
+    }
+}
+.slide__icon{
+    @media(max-width: $breakpoint480){
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+}
+.swiper{
+    max-width: 960px;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    @media(max-width: $breakpoint992){
+        flex-direction: column;
+    }
+}
+.swiper-wrapper{
+    display: flex;
+    // gap: 30px;
+    @media(max-width: $breakpoint1900){
+        padding-bottom: 50px;
+    }
+    @media(max-width: $breakpoint1200){
+        padding-bottom: 70px;
+    }
+}
+.swiper-pagination{
+    display: none;
+    @media(max-width: $breakpoint1900){
+        display: block;
+    }
+}
+span.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: $secondary;
+}
+.info {
+    display: flex;
+    &__subtitle {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 180%;
+        color: $primary;
+        @media(max-width: $breakpoint992){
+            font-size: 16px;
+        }
+    }
+
+    &__text {
+        max-width: 600px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        color: $primaryLight;
+        padding: 24px 0px 16px 0px;
+        @media(max-width: $breakpoint992){
+            font-size: 16px;
+            padding: 18px 0px 14px 0px;
+        }
+    }
+
+    &__icon {
+        
+    }
+}
+.slider__buttons{
+    display: flex;
+    justify-content: space-between;
+    transform: translate(0,175px);
+    .button-prev{
+        cursor: pointer;
+        transition: .1 ease;
+        &:hover{
+            line,
+            circle{
+                transition: .1 ease;
+                stroke: $primary;
+            }
+        }
+        &.swiper-button-disabled{
+            line,
+            circle{
+            transition: .1 ease;
+            stroke: $primary;
+            }
+        }
+    }
+    .button-next{
+        cursor: pointer;
+        transition: .3 ease;
+        &:hover{
+            line,
+            circle{
+                transition: .3 ease;
+                stroke: $primary;
+            }
+        }
+        &.swiper-button-disabled{
+            line,
+            circle{
+            transition: .1 ease;
+            stroke: $primary;
+            }
+        }
+    }
+    @media(max-width: $breakpoint1900){
+        display: none;
+    }
+}
+
+
+
